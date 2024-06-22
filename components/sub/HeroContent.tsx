@@ -13,12 +13,12 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-row items-center justify-center px-10 md:px-20 mt-60 md:mt-40 w-full z-[20]"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-2 border border-[#7024f88b] opacity-[0.9] "
+          className="Welcome-box py-[8px] px-[4px] border border-[#7024f88b] opacity-[0.9] "
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]"> FullStack Web Developer</h1>
@@ -26,7 +26,7 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 text-5xl md:text-6xl mt-6 font-bold text-white max-w-[600px] w-auto h-auto  sm:text-left"
         >
           <span>
             Providing{" "}
@@ -42,8 +42,8 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-500 my-5 max-w-[600px]"
         >
-          I &apos; am Full Web Developer working on Live Website Check out my
-          projects and skills am working on
+          I &apos; am Full Stack Web Developer working on Live Website Check out
+          my projects and skills am working on
         </motion.p>
 
         <motion.a
@@ -60,7 +60,7 @@ const HeroContent = () => {
         <Image
           src="/mainIconsdark.svg"
           alt="work icons"
-          className="h-[650px] w-[650px]"
+          className="hidden sm:block"
           width={650}
           height={650}
         />
